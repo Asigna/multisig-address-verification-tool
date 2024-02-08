@@ -1,0 +1,27 @@
+.component {
+  display: flex;
+  max-width: 591px;
+  width: 100%;
+  padding: 32px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(54px);
+}
+.title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.note {
+  color: #ababab;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  & > a {
+    color: #fdac5d;
+  }
+}

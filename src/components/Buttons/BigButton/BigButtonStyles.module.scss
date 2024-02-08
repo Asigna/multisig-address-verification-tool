@@ -1,0 +1,39 @@
+.component {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid #42ffcd;
+  border-right: 1px solid #1ed4d4;
+  background: linear-gradient(90deg, #2dffc7 0%, #05cfcf 100%),
+    rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  width: 385px;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  outline: none;
+  transition: all ease 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(94deg, #5638f2 0%, #b956f5 100%);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: unset;
+  }
+
+  @media (max-width: 320px) {
+    padding: 15px 12px;
+  }
+}
+
+.text {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
